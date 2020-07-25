@@ -3,14 +3,10 @@ package examplecpu
 import javax.naming.directory.BasicAttribute
 
 //Facade
-class Computer {
+class Computer(var cpu: CPU, var memory: Memory, var hardDrive: HardDrive) {
     private val BOOT_ADDRESS = 0L
     private val BOOT_SECTOR = 0L
     private val SECTOR_SIZE = 0
-
-    private val cpu = CPU()
-    private val memory = Memory()
-    private val hardDrive = HardDrive()
 
     fun startComputer() {
         cpu.freeze()
@@ -21,7 +17,7 @@ class Computer {
 }
 
 // Complex parts
-private class CPU {
+class CPU {
     fun freeze() {
         println("CPU freeze")
     }
@@ -35,13 +31,13 @@ private class CPU {
     }
 }
 
-private class Memory {
+class Memory {
     fun load(position: Long, data: ByteArray) {
         println("Memory load")
     }
 }
 
-private class HardDrive {
+class HardDrive {
     fun read(lba: Long, size: Int): ByteArray {
         println("CPU freeze")
         return ByteArray(2)
