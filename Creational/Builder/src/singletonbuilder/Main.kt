@@ -1,0 +1,5 @@
+package singletonbuilder
+
+object Main {
+
+}
