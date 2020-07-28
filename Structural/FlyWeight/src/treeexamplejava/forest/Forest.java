@@ -1,8 +1,8 @@
-package forest;
+package treeexamplejava.forest;
 
-import trees.Tree;
-import trees.TreeFactory;
-import trees.TreeType;
+import treeexamplejava.trees.Tree;
+import treeexamplejava.trees.TreeFactory;
+import treeexamplejava.trees.TreeType;
 
 import javax.swing.*;
 import java.awt.*;

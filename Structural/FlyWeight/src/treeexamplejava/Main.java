@@ -1,6 +1,10 @@
-import forest.Forest;
+package treeexamplejava;
+
+import treeexamplejava.forest.Forest;
 
 import java.awt.*;
+
+import static java.lang.Math.floor;
 
 public class Main {
     static int CANVAS_SIZE = 500;
@@ -9,7 +13,7 @@ public class Main {
 
     public static void main(String[] args) {
         Forest forest = new Forest();
-        for (int i = 0; i < Math.floor(TREES_TO_DRAW / TREE_TYPES); i++) {
+        for (int i = 0; i < floor(TREES_TO_DRAW / TREE_TYPES); i++) {
             forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
                     "Summer Oak", Color.GREEN, "Oak texture stub");
             forest.plantTree(random(0, CANVAS_SIZE), random(0, CANVAS_SIZE),
@@ -18,7 +22,7 @@ public class Main {
         forest.setSize(CANVAS_SIZE, CANVAS_SIZE);
         forest.setVisible(true);
 
-        System.out.println(TREES_TO_DRAW + " trees drawn");
+        System.out.println(TREES_TO_DRAW + " treeexamplejava.trees drawn");
         System.out.println("---------------------");
         System.out.println("Memory usage:");
         System.out.println("Tree size (8 bytes) * " + TREES_TO_DRAW);

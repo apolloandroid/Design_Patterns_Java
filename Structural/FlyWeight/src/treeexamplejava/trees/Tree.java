@@ -1,6 +1,6 @@
-package trees;
+package treeexamplejava.trees;
 
-import java.awt.*;
+import java.awt.Graphics;
 
 public class Tree {
     private int x, y;

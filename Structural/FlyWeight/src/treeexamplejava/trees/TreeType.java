@@ -1,4 +1,4 @@
-package trees;
+package treeexamplejava.trees;
 
 import java.awt.*;
 
