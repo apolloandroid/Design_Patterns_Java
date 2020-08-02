@@ -1,0 +1,4 @@
+package examplegraphiceditor
+
+object Main {
+}
