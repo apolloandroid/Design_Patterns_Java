@@ -1,5 +1,7 @@
 package examplegraphiceditor
 
+import examplegraphiceditor.shapes.*
+
 class PrimitiveFactory {
 
 
@@ -29,8 +31,8 @@ class PrimitiveFactory {
             return squares[width + height]
         }
 
-        fun createPicture(vararg children:Primitive):Picture {
-            return Picture(children)
-        }
+//        fun createPicture(vararg children: Primitive): Picture {
+//            return Picture(children)
+//        }
     }
 }

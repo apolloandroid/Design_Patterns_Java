@@ -1,5 +1,6 @@
-package examplegraphiceditor
+package examplegraphiceditor.shapes
 
+import examplegraphiceditor.Context
 import java.util.*
 
 
