@@ -1,14 +1,11 @@
-package examplejava;
-
-import examplejava.medialibrary.Video;
-import examplejava.medialibrary.YouTubeLibrary;
+package examplejava.medialibrary;
 
 import java.util.HashMap;
 
-public class YouTubeDownloader {
+public class Downloader {
     private YouTubeLibrary api;
 
-    public YouTubeDownloader(YouTubeLibrary api) {
+    public Downloader(YouTubeLibrary api) {
         this.api = api;
     }
 
