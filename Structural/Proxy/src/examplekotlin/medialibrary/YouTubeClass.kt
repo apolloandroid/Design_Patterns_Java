@@ -3,7 +3,7 @@ package examplekotlin.medialibrary
 import java.util.HashMap
 
 class YouTubeClass : YouTubeLibrary {
-    override fun popularVideos(): HashMap<String, Video>? {
+    override fun popularVideos(): HashMap<String, Video> {
         connectToServer("http://www.youtube.com")
         return getRandomVideos()
     }
@@ -35,7 +35,7 @@ class YouTubeClass : YouTubeLibrary {
         println("Connected!")
     }
 
-    private fun getRandomVideos(): java.util.HashMap<String, Video>? {
+    private fun getRandomVideos(): java.util.HashMap<String, Video> {
         println("Downloading populars")
         experienceNetWorkLatency()
         val hmap = java.util.HashMap<String, Video>()
