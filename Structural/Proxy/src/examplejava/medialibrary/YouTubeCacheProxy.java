@@ -32,9 +32,4 @@ public class YouTubeCacheProxy implements YouTubeLibrary {
         }
         return video;
     }
-
-    public void reset() {
-        cacheAll.clear();
-        cachePopular.clear();
-    }
 }
