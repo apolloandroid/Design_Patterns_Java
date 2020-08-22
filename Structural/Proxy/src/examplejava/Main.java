@@ -22,7 +22,7 @@ public class Main {
         downloader.renderPopularVideos();
         downloader.renderVideoPage("dancesvideoo");
         downloader.renderVideoPage("catzzzzzzzzz");
-        downloader.renderVideoPage("someothervid");
+        downloader.renderVideoPage("catzzzzzzzzz");
 
         long estimatedTime = System.currentTimeMillis() - startTime;
         System.out.println("Time elapsed: " + estimatedTime + "ms\n");
