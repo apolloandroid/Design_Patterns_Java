@@ -15,6 +15,7 @@ public class Main {
     private static Server server;
 
     public static void main(String[] args) throws IOException {
+        init();
         boolean success;
         do {
             System.out.print("Enter email: ");
