@@ -1,0 +1,4 @@
+package examplekotlin
+
+object Main {
+}
